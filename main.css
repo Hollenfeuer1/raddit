@@ -1,16 +1,66 @@
+body {
+    background-color: #b2bec3;
+}
+
 h1 {
     font-size: 5em;
 }
 
 .post {
     width: 800px;
-    margin-left: 100px;
+    margin: 1% 0px;
+    background-color: #ecf0f1;
+}
+
+.post p {
+    padding: 2%;
+}
+
+.post h3 {
+    padding: 2%;
+    background-color: #3498db;
 }
 
 .blog-visited {
     width: 400px;
+    background-color: #ecf0f1;
+}
+
+.blog-visited p {
+    padding: 2%;
+}
+
+.blog-visited h3 {
+    padding: 2% 3%;
+    background-color: #3498db;
 }
 
 .fas {
     margin-left: 1%;
+}
+
+.link-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.link-class a {
+    padding: 0px 2%;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.blog-post-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5% !important;
+    align-items: center;
+}
+
+.blog-post-author {
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
