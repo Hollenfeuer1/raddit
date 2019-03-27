@@ -1,5 +1,5 @@
 body {
-    background-color: #b2bec3;
+    background-color: #dfe6e9 !important;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 
 .post h3 {
     padding: 2%;
-    background-color: #3498db;
+    background-color: #00cec9;
 }
 
 .blog-visited {
@@ -101,4 +101,8 @@ tr:nth-child(even) {
 td {
     border: 1px solid black;
     padding: 1%;
+}
+
+.create-form {
+    margin: 2%;
 }
