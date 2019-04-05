@@ -72,14 +72,51 @@
                     </table>
                     </div>
                     <div class="blog-post-author">
-                            <span>Alyssa Odom</span>
-                            <span>3/23/19 @ 9:44am</span>
-                    </div>
+                        <span>Alyssa Odom</span>
+                        <span id="post-one"></span>
+                </div>
+                <div class="thumbs-class">
+                    <i class="fas fa-thumbs-up" id="first-post-thumb" onclick="likePost(1)"></i>
+                </div>
             </div>
             </div>
             <br />
     
             <br />
-            <h6>Copyright 2019: Front-End Class</h6>
+            <footer>
+                <h6>Copyright 2019: Front-End Class</h6>
+              </footer>
+              <script>
+                  let today = new Date();
+                  let dateString = (today.getMonth() + 1) + "/" + (today.getDay()) + "/" + (today.getFullYear()) + " " + (today.getHours() > 12 ? today.getHours() - 12 : today.getHours()) + ":" + (today.getMinutes()) + (today.getHours() > 12 ? " PM" : " AM");
+                  document.getElementById("post-one").innerHTML = dateString;
+            
+                  function likePost(number) {
+                    
+                    let post = "";
+                    switch (number) {
+                      case 1:
+                        post = "first-post-thumb";
+                        console.log(post);
+                        break;
+                        
+                      case 2:
+                        post = "second-post-thumb";
+                        console.log(post);
+                        break;
+                      default:
+                        post = "first-post-thumb";
+                  
+                    }
+                    console.log(post);
+                    var thumb = document.getElementById(post);
+                    console.log(thumb);
+                    if (thumb.classList.contains("thumbs-liked")) {
+                      thumb.classList.remove("thumbs-liked");
+                    } else {
+                    thumb.classList.add("thumbs-liked");
+                    }
+                  }
+              </script>
     </body>
 </html>

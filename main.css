@@ -106,3 +106,16 @@ td {
 .create-form {
     margin: 2%;
 }
+
+.thumbs-class {
+    margin: 10px;
+    color: grey !important;
+}
+
+.thumbs-class:hover {
+    cursor: grab;
+}
+
+.thumbs-liked {
+    color: gold;
+}
